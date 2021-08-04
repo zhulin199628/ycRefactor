@@ -1,0 +1,388 @@
+view{
+	word-break: break-all;/*给所有view添加一个让数字可以换行的样式*/
+}	
+	/* v-cloak 不显示未编译的字段 */
+	[v-cloak] {
+		display: none;
+	}
+	
+	
+	/* 文本域样式 */
+	.textarea {
+		width: 94vw;
+		height: 100upx;
+		background: #F4F4F4;
+		padding: 3vw;
+		border-radius: 20px;
+	}
+	/*多余文字省略号显示*/
+	.readingText {
+		display:-webkit-box;
+		word-break:break-all;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		-webkit-line-clamp:-1;
+		-webkit-box-orient:vertical;
+	}
+	/* 底部按钮 */
+	.address-add {
+		position: fixed;
+		bottom: 0;
+		width: 100vw;
+		height: 14.93vw;
+		background-color: #ffffff;
+		display: flex;
+	}
+	.address-add button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	/* 右侧浮窗 */
+	.address-right {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: 15vw;
+		height: 30vw;
+	}
+	.address-right view{
+		align-items: center;
+	}
+	.address-right view image{
+		width: 14.93vw;height: 13.87vw;
+	}
+	.address-right view button{
+		width: 14.93vw;height: 13.33vw;opacity: 0;
+	}
+	/* 兑换浮窗 */
+	.address-down {
+		position: fixed;
+		bottom: 0;
+		width: 96vw;
+		height: 15vw;
+		background-color: #946BE3;
+		border-radius: 1.33vw;
+		display: flex;
+		align-items:center;
+		margin-left: 2vw;
+	}
+	/* 消息浮窗 */
+	.address-top {
+		position: fixed;
+		top: 0;
+		width: 100vw;
+		height: 10.67vw;
+		background-color: #FAE0B5;
+		display: flex;
+		align-items:center;
+	}
+	/* 音乐浮窗 */
+	.address-music {
+		position: fixed;
+		bottom: 14vw;
+		left: 4vw;
+		width: 92vw;
+		height: 14vw;
+		border-radius: 1.33vw;
+		background-color: #797987;
+		display: flex;
+		
+	}
+	
+	/* div不换行 */
+	.dis {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap:wrap
+	}
+	/* div内容居中 */
+	.dis-text{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	/* 评论人名称 */
+	.commentName {
+		width: 46vw;
+		align-items: center;
+		font-size: 4vw;
+		font-weight: 400;
+		color: #9DA0B1;
+		margin-top: -1vw;
+	}
+	/* 背景图填充 */
+	.background {
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+	/* 横向滑动 */
+	.scrollContainer {
+	  width: 100%;
+	  height: 10vw;
+	  /* border-top: 1rpx solid #EF639F; */
+	  /* border-bottom: 1rpx solid #EF639F; */
+	  white-space: nowrap;/* 关键代码，使元素不换行 */
+	  background-color: #FFFFFF;
+	}
+	/* 跳转列表页的按钮的样式 */
+	.xihaparkTop {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.more {
+		width: 26vw;
+		height: 8vw;
+		text-align: center;
+		font-size: 3.47vw;
+		font-weight: 400;
+		color: #4B4C5E;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		line-height: 17px;
+	}
+	.more image {
+		width: 2vw;
+		height: 3vw;
+		margin-left: 1.33vw;
+	}
+	/* 页尾的感恩浏览 */
+	.ending{
+		padding-top: 8vw;
+		width: 100%;
+		text-align: center;
+		height: 20vw;
+		color: #9DA0B1;
+		font-size: 3.2vw;
+		font-weight: 400;
+	}
+	.ending view {
+		display: inline-block;position: relative;top: -1vw;
+	}
+	
+	/* 更细的 <hr/> */
+	.hr {
+		/* margin-left: 3vw; */
+		width: 88vw;
+		height: 2rpx;
+		background-color: #F4F4F4;
+	}
+
+	
+	/* 我的问答 审核中; 课程 试听 */
+	.underReview {
+		color: #37CBB5;border: #37CBB5 solid 2rpx;height: 4.27vw;width: 9.33vw;font-size: 2.4vw;font-weight: 450;border-radius: 0.53vw;
+	}
+	.underReview view{
+		font-size: 2.4vw;font-weight: 450;margin-top: 1px;
+	}
+	
+	/* 阴影 */
+	.box-shadow{
+		box-shadow:  0px 6px 30px 0px rgba(0,0,0,0.05);/*box-shadow: 水平距离 垂直距离 模糊距离 阴影大小 颜色;*/
+	}
+	/*训练营底部按钮投影 课程兑换*/
+	.box-shadow-address {
+		box-shadow: 0vw -6px 10px 0vw rgba(0,0,0,0.03);
+	}
+	/* 静心阅读书 */
+	.box-shadow-img{
+		box-shadow: 0 0 5px 1px rgba(0,0,0,0.05);/*box-shadow: 水平距离 垂直距离 模糊距离 阴影大小 颜色;*/
+	}
+	/* 详情和展开使用(静心阅读列表页和芸益问答回复区除外) */
+	.box-shadow-open{
+		box-shadow: -15px 0 9px 1px #FFFFFF;
+	}
+	
+	/* 芸益问答列表顶部导航样式 */
+	.issue-head {
+		display: flex; background-color: #FFFFFF;height: 14.67vw;
+	}
+	.issue-head-txt {
+		color: #9DA0B1;font-size: 28rpx;font-weight: 400;transform:translateY(0%);text-align: center;margin-top: 4vw;width: 20vw;
+	}
+	.issue-head-checked {
+		color: #313236;font-size: 36rpx;font-weight: 450;transform:translateY(-10%);
+		/* margin-top: 3vw; */
+	}
+	.issue-head-color {
+		height: 8rpx; width: 44rpx; background-color: #946BE3;margin-left: 7vw;border-radius: 4rpx;
+	}
+	/* 芸益问答列表模块选择 */
+	.issue-scroll {
+		background-color: #F4F4F4;
+		position: relative;
+		left: -4vw;
+		width: 100vw;
+	}
+	.issue-scroll view {
+		height: 6.93vw;display: inline-block;
+	}
+	.issue-scroll view view {
+		width: 18.13vw;height: 6.93vw;margin-top: 1vw;margin-bottom: 1vw;margin-right: 4vw;border-radius: 0.8vw;text-align: center;line-height: 2;
+	}
+	/* 芸益问答评论区 静心阅读引用此样式*/
+	.issue-commentName-image {
+		width: 5.87vw;height: 5.87vw;border-radius: 7vw;margin-right: 1.6vw;
+	}
+	.issue-commentName-icon {
+		width: 5.87vw;height: 5.87vw;margin-left: 24vw;
+	}
+	/* 芸益问答展开(回答，评论 回复) */
+	.issue-comment-open1 {
+		color: #946BE3;
+		background-color: #FFFFFF;
+		/* position:relative; */
+		/* right: -72vw; */
+		width: 13vw;
+	}
+	.issue-comment-open2 {
+		color: #946BE3;
+		background-color: #FFFFFF;
+		/* position:relative; */
+		right: 0;
+		width: 13vw;
+	}
+	.issue-comment-open3 {
+		color: #946BE3;background-color: #f9f7fd;position:relative;right: -58vw;width: 13vw;box-shadow: -15px 0 9px 1px #f9f7fd;
+	}
+	/* 芸益问答语音 */
+	.issue-music {
+		background-color: #946BE3;border-radius: 1.07vw;width: 25.07vw;height: 8vw;
+	}
+	.issue-music image {
+		width: 2.6vw;height: 3.7vw;/*margin-left: 4vw;margin-top: 2.1vw;*/
+	}
+	.issue-music view {
+		font-size: 3.47vw;font-weight: 450;color: #FFFFFF;margin-left: 2.13vw;/*margin-top: 0.8vw;*/
+	}
+	/* 芸益问答回复 弹框 */
+	.issue-reply {
+		padding: 4vw;
+		padding-top: 5.33vw;
+	}
+	.issue-reply .readingText {
+		font-size: 36rpx;font-weight: 450;color: #313236;
+	}
+	.issue-reply textarea {
+		border-radius: 1.33vw;width: 86vw;height: 48vw;margin-top: 3vw;margin-bottom: 3vw;font-size: 28rpx;font-size: 400;color: #313236;
+	}
+	.issue-button {
+		display: flex;position: absolute;bottom: 2.13vw;
+	}
+	.issue-button-submit {
+		height: 10.67vw;width: 44vw;font-size: 28rpx;font-weight: 400;background-color: #946BE3; color: #FFFFFF;border-radius: 1.33vw;display: flex;justify-content: center;align-items: center;margin-left: 5vw;margin-right: 5vw;
+	}
+	.issue-button-hide {
+		height: 10.67vw;width: 44vw;font-size: 28rpx;font-weight: 400;background-color: #E6E6EB;color: #9DA0B1;border-radius: 1.33vw;display: flex;justify-content: center;align-items: center;
+	}
+	/* 小程序内核不支持此选择器 */
+	/* .issue-button>:first-child {
+		background-color: #CECED8;color: #9DA0B1;
+	}
+	.issue-button>:last-child {
+		margin-left: 8vw; background-color: #946BE3; color: #FFFFFF;
+	} */
+	
+	
+	
+	/* 静心阅读语音 */
+	.read-play {
+		background-color: #946BE3;border-radius: 1.07vw;width: 22.13vw;height: 6.93vw;margin-bottom: 6vw;
+	}
+	.read-play image {
+		width: 2.67vw;height: 3.73vw;/* margin-left: 4vw;margin-top: 1.5vw; */
+	}
+	.read-play view {
+		font-size: 3.47vw;font-weight: 450;color: #FFFFFF;margin-left: 2.13vw;/* margin-top: 1vw; */
+	}
+	/* 静心阅读弹框 */
+	.read-dialog {
+		margin-left: 73vw;margin-top: 4vw;height: 6.4vw;
+	}
+	.read-dialog image{
+		width: 6.4vw;height: 6.4vw;
+	}
+	.read-dialog-msg {
+		width: 60vw;text-align: center;margin-left: 12vw;
+	}
+	.read-dialog-title {
+		font-size: 4.53vw;font-weight: 450;color: #313236;
+	}
+	.read-dialog-body {
+		font-size: 3.73vw;font-weight: 400;color: #9DA0B1;line-height: 23px;margin-top: 1vw;
+	}
+	.read-dialog-button {
+		justify-content: space-around;width: 71.2vw;margin-left: 6.4vw; position: absolute;bottom: 10vw;
+	}
+	.read-dialog-button view{
+		font-size: 3.73vw;width: 27vw;height: 9.6vw;border-radius: 1.33vw;
+	}
+	.read-dialog-button-cancel {
+		box-shadow: 0 2px 14px 0 rgba(206,206,216,0.5); color: #9DA0B1;background-color: rgba(206,206,216,0.7);;
+	}
+	.read-dialog-button-confirm {
+		box-shadow: 0 2px 14px 0 rgba(148,107,227,0.4); color: #FFFFFF;background-color: #946BE3;
+	}
+	
+	
+	
+	/* 课程列表    包括我的课程、训练营，训练营列表 */
+	.class-list {
+		background-color: #FFFFFF;width: 92vw;height: 70.4vw;border-radius: 1.33vw;
+	}
+	.class-Image {
+		height: 51.46vw;width: 92vw;display: flex;border-top-left-radius: 1.33vw;border-top-right-radius: 1.33vw;
+	}
+	.class-Image image{
+		width: 12.26vw;height: 12.6vw;margin-left: 79.73vw;
+	}
+	.class-list-name {
+		font-size: 4.27vw;font-weight: 450;color: #313236; margin-top: 3.2vw;margin-left: 4vw;
+	}
+	.class-list-module {
+		font-size: 3.2vw;font-weight: 400;color: #9DA0B1;margin-top: 1.07vw;margin-left: 4vw;
+	}
+	
+	/* 训练营 评论/功课列表 切换   课程也引用了(弃用，使用issue-head系列)*/
+	.training-head {
+		display: flex;margin-top: 3vw;margin-bottom: 1.33vw;padding: 4vw;padding-top: 8vw;
+	}
+	.training-head-txt {
+		font-size: 32rpx;font-weight: 400;transform:translateY(8%);color: #313236;width: 25vw;
+	}
+	.training-head-checked {
+		font-size: 36rpx;font-weight: 450;transform:translateY(0%);
+	}
+	.training-head-color {
+		height: 8rpx; width: 44rpx; background-color: #946BE3;margin-left: 7vw;border-radius: 4rpx;
+	}
+	/* 训练营评价 功课列表 */
+	.training-body-image {
+		width: 6.4vw;height: 6.4vw; border-radius: 8vw; margin-right: 2.67vw;
+	}
+	.training-body-phase {
+		color: #9DA0B1;font-size: 3.2vw;font-weight: 400;
+	}
+	.training-body-content {
+		margin-left: 8.8vw;margin-top: 1.33vw;
+	}
+	.training-body-content view:first-child {
+		-webkit-line-clamp:4;color: #4B4C5E;font-size: 3.7vw;font-weight: 400;line-height: 6.4vw;
+	}
+	.training-body-content view:nth-child(2) {
+		display: flex;justify-content: flex-start; flex-wrap:wrap
+	}
+	.training-body-icon {
+		margin-left: 8.8vw;margin-top: 3.2vw;display: flex;
+	}
+	.training-body-icon image {
+		width: 5.87vw;height: 5.87vw;margin-right: 1vw;
+	}
+	.training-body-icon view {
+		color: #9DA0B1;font-size: 3.2vw;font-weight: 400;margin-top: 0.27vw;
+	}
+	

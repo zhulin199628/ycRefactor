@@ -1,15 +1,11 @@
-.white{
-	color: #FFFFFF;
-}
-
-
 
 .backgroundImg{
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 
-.backgroundWhite{
+/* 背景颜色 */
+.bgWhite{
 	background: #FFFFFF;
 }
 .backgroundViolet{
@@ -21,14 +17,31 @@
 .bgColorRed2{
 	background-color: #EAE5E9;
 }
+.bgColorGreen1{
+	background-color: #3A5562; 
+}
+
+.bgColorBlockOpacity{
+	background-color: rgba(0, 0, 0, 1);
+}
+.bgColorBlockOpacity4{
+	background-color: rgba(0, 0, 0, .4);
+}
+.bg555{
+	background-color: #555555;
+}
 .grey{
 	background-color: #BBBBBB;
 }
 
+/* 字体颜色 */
+
 .grey1{
 	color: #BFAFB7;
 }
-
+.white{
+	color: #FFFFFF;
+}
 .redB{
 	color: #B81D22;
 }
@@ -37,6 +50,9 @@
 }
 .black{
 	color: #313236;
+}
+.black1{
+	color: #000000;
 }
 .black4{
 	color: #4B4C5E;
@@ -47,42 +63,17 @@
 .black10{
 	color: #1A1A1A;
 }
+.black11{
+	color: #666666;
+}
 .violet{
 	color: #946BE3;
 }
 .violet2{
 	color: #63568D;
 }
-.font17{
-	 font-size: 30.9rpx;
-}
-.font11{
-	font-size: 19.92rpx;
-}
-.font13{
-	font-size: 23.63rpx;
-}
-.font14{
-	font-size: 25.45rpx;
-}
-.font16{
-	font-size: 29.09rpx;
-}
-.font15{
-	font-size: 27.17rpx;
-}
-.font12{
-	font-size: 21.73rpx;
-}
 
-.font26{
-	font-size: 47.1rpx;
-}
-
-.font30{
-	font: 30px;
-}
-
+/* 字体加粗 */
 .fontweight{
 	font-weight: bold;
 }
@@ -92,15 +83,32 @@
 .font-weight500{
 	font-weight: 500;
 }
-.marginTop16{
-	margin-top: 16rpx;
+
+/* 字体大小 */
+.font16{
+	font-size: 32rpx;
 }
-.marginTop4{
-	margin-top: 4rpx;
+.font12{
+	font-size: 24rpx;
 }
-.padding20{
-	padding: 0 10rpx;
+.font14{
+	font-size: 28rpx;
 }
+/* 字体 */
+.fontfamily{
+	/* font-family: "Monospaced Number,Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif"; */
+}
+
+.fontOpacity{
+	color: #fff;
+	opacity: 0.4;
+}
+/* 图标大小 */
+.iconWidth{
+	width: 48rpx;
+	height: 48rpx;
+}
+/* flex 定位 */
 .flex-style{
 	display: flex;
 	justify-content: center;
@@ -134,53 +142,28 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.paddingLeft10{
-	padding-left: 18.11rpx;
+
+/* 内边距 */
+.padding16{
+	padding: 32rpx;
 }
 
-.paddingLeft14{
-	padding-left: 25.36rpx;
+.fl{
+	float: left;
 }
-.paddingLeft17{
-	padding-left: 30.79rpx;
-}
-
-.paddingLeft6{
-	padding-left: 10.86rpx;
-}
-.paddingLeft4{
-	padding-left: 7.24rpx;
+.fr{
+	float: right;
 }
 
-.marginLf10{
-	margin-left: 18.11rpx;
+/* 透明度 */
+.opacity1{
+	opacity: 0.1;
 }
-.marginTop6{
-	margin-top: 10.86rpx;
-}
-.marginTop24{
-	margin-top: 43.47rpx;
+.opacity4{
+	opacity: 0.4;
 }
 
-.lineHeight{
-	line-height: 47.1rpx;
-}
-
-
-.imgWith28{
-	width: 50.72rpx;
-	height: 50.72rpx;
-}
-
-.imgWith15{
-	width: 27.17rpx;
-	height: 27.17rpx;
-}
-
-.imgWidth30{
-	width: 36.23rpx;
-	height: 54.34rpx;
-}
+/* 动画 */
 
 .progress-animate{
 		width: 100%;

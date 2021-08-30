@@ -1,5 +1,5 @@
-
 <script>
+	import "./common/css/public.css"
 	export default {  
 	        onLaunch: function() {  
 	            console.log('App Launch，app启动')  

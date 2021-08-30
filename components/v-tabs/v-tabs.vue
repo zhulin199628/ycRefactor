@@ -13,7 +13,6 @@
           display: scroll ? 'inline-flex' : 'flex',
           whiteSpace: scroll ? 'nowrap' : 'normal',
           background: bgColor,
-          height,
           padding
         }"
       >
@@ -33,7 +32,7 @@
         >
           {{ field ? v[field] : v }}
         </view>
-        <view
+       <!-- <view
           v-if="!pills"
           class="v-tabs__container-line"
           :style="{
@@ -44,8 +43,8 @@
             left: lineLeft + 'px',
             transform: `translateX(-${lineWidth / 2}px)`
           }"
-        ></view>
-        <view
+        ></view> -->
+       <!-- <view
           v-else
           class="v-tabs__container-pills"
           :style="{
@@ -55,16 +54,16 @@
             width: currentWidth + 'px',
             height
           }"
-        ></view>
+        ></view> -->
       </view>
     </scroll-view>
-    <view
+   <!-- <view
       class="v-tabs__placeholder"
       :style="{
         height: fixed ? height : '0',
         padding
       }"
-    ></view>
+    ></view> -->
   </view>
 </template>
 
@@ -335,5 +334,9 @@ export default {
       z-index: 9;
     }
   }
+}
+
+.v-tabs__container{
+	margin-top: 20rpx;
 }
 </style>

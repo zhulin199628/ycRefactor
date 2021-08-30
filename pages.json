@@ -32,9 +32,14 @@
 			}
 		},
 		{
-			"path": "pages/find/redingbooks/sections",
+			"path": "pages/find/redingbooks/index",
 			"style": {
-				"navigationBarTitleText": "静心悦读"
+				// "navigationBarTitleText": "静心悦读"
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": "white"
+				// "backgroundColor":"#3A5562"
+				// "navigationBarBackgroundColor":"#056c7d",
+				
 			}
 		}
     ],

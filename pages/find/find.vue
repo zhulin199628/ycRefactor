@@ -5,7 +5,7 @@
 		</view>
 		<!-- 句读读法 -->
 		<view class="" style="width: 343px; height: 50px;">
-			<ycTextOverFlow lineCunt = "6" moreText = "更多">
+			<ycTextOverFlow lineCunt="6" moreText="更多">
 				<text>
 					顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶抵达长沙出差山地车山地车山地车山地车是ssssssssssssssssssssssssssssssssssssssss顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶抵达长沙出差山地车山地车山地车山地车是ssssssssssssssssssssssssssssssssssssssss
 					顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶抵达长沙出差山地车山地车山地车山地车是ssssssssssssssssssssssssssssssssssssssss
@@ -13,17 +13,12 @@
 			</ycTextOverFlow>
 		</view>
 		<view class="">
-			<ycAudio
-			 :autoplay = "autoplay"
-			 :voicePath = "voicePath"
-			 :playMethod = "playMethod"
-			 @provious = "provious"
-			 @next = "next"
-			/>
+			<ycAudio :autoplay="autoplay" :voicePath="voicePath" :playMethod="playMethod" @provious="provious"
+				@next="next" />
 		</view>
 		<view class="">
 			<uni-popup ref="record" background-color="#fff" type="share">
-				<recordAnimate :start = "start"/>
+				<recordAnimate :start="start" />
 				<ycRecord> </ycRecord>
 			</uni-popup>
 		</view>
@@ -32,22 +27,23 @@
 				<button class="button" type="primary" @click="shareToggle"><text class="button-text">录音</text></button>
 			</view>
 		</view>
-		
 		<view class="">
-			<button @tap = "auth">授权</button>
+			<button @tap="auth">授权</button>
 		</view>
 	</view>
 </template>
 
 <script>
-	import URLS from '../../common/api.config.js'
+	import {
+		URLS
+	} from '../../common/api.config.js'
 	import yclink from "@/components/yc-link/yc-link.vue"
 	import ycTextOverFlow from "@/components/yc-textoverflow/yc-textoverflow.vue"
 	import ycAudio from "@/components/ycAudio/ycAudio.vue"
 	import ycRecord from '@/components/yc-record/yc-record.vue'
 	import recordAnimate from '@/components/record-animate/record-animate.vue'
 	export default {
-		components:{
+		components: {
 			ycTextOverFlow,
 			ycAudio,
 			yclink,
@@ -66,12 +62,11 @@
 					displayCount: 2,
 					nextMargin: "80rpx",
 					//
-					autoplay: false,// 是否默认播放
+					autoplay: false, // 是否默认播放
 					sectionIndex: null, //  当前播放的章节索引
 					sectionLength: null, // 当前书籍的所有章节， 避免在最后或第一章的时候，用户还能进行切换音频
 					voicePath: "https://ygyc-product.oss-cn-hangzhou.aliyuncs.com/sdu/krifation/voice/fc2a496753a8461d8bd5bad9e341f604-道德经 1.mp3", //   音频路径
 					playMethod: "",
-					
 					start: true
 				},
 				cardOptions: {
@@ -85,7 +80,7 @@
 		},
 		methods: {
 			//  查询列表
-			getList: function() {
+			getList() {
 				URLS.readApi.list().then(res => {
 					this.commentData = res.data;
 				}).catch(err => {
@@ -95,20 +90,20 @@
 					});
 				})
 			},
-			provious: function(){
+			provious: function() {
 				console.log("--上一个")
 			},
-			next: function(){
+			next: function() {
 				console.log("--下一个")
 			},
-			shareToggle: function(){
+			shareToggle: function() {
 				this.$refs.record.open()
 			},
-			auth: function(){
+			auth: function() {
 				uni.navigateTo({
 					url: "../auth/auth"
 				})
-				 console.log("------auth")
+				console.log("------auth")
 			}
 		}
 	}

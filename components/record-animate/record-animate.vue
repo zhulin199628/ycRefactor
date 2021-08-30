@@ -53,10 +53,7 @@
 <style>
 	.wrap {
 		overflow: hidden;
-		width: 500px;
-		height: 100px;
-		border: 1px solid #000;
-		margin: 50px auto;
+		margin: 48rpx auto;
 	}
 
 	.list {
@@ -65,23 +62,20 @@
 		left:0px;
 		width:200%;
 		height:100%;
-		border:1px solid #f00;
 		list-style:none;
 		animation:mymove 5s infinite linear;
 	}
 
 	.cline {
 		width: 2px;
-		/* height: 98px; */
-		background-color: #000000;
-		/* border: 1px solid white; */
-		/* background: blue; */
+		background-color: #555;
 		float: left;
 		vertical-align: middle;
 		text-align: center;
-		line-height: 98px;
+		line-height: 196rpx;
 		color: white;
 		font-weight: 600;
+		margin-left: 0.6rpx;
 	}
 	
 	
@@ -102,7 +96,7 @@
 		}
 
 		to {
-			left: -500px;
+			left: -1000rpx;
 		}
 	}
 </style>
